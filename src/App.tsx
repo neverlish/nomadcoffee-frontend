@@ -9,6 +9,8 @@ import SignUp from "./screens/SignUp";
 import { HelmetProvider } from "react-helmet-async";
 import Login from "./screens/Login";
 import Layout from "./components/Layout";
+import CoffeeShopDetail from "./screens/CoffeeShopDetail";
+import AddCoffeeShop from "./screens/AddCoffeeShop";
 
 function App() {
   const isLoggedIn = useReactiveVar(isLoggedInVar);
@@ -33,7 +35,14 @@ function App() {
                 <Route path={routes.signUp}>
                   <SignUp />
                 </Route>
-              ) : null}
+              ) : <>
+                <Route path={routes.addCoffeeShop}>
+                  <AddCoffeeShop />
+                </Route>
+              </>}
+              <Route path={routes.coffeeShopDetail}>
+                <CoffeeShopDetail />
+              </Route>
             </Switch>
           </BrowserRouter>
         </ThemeProvider>
