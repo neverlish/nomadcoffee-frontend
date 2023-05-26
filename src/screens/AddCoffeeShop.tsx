@@ -43,7 +43,7 @@ function AddCoffeeShop() {
     })
   }
   const [doMutation, { loading }] = useMutation(CREATE_COFFEE_SHOP, { onCompleted });
-  const { register, handleSubmit, formState, getValues, setError, clearErrors } = useForm<CreateCoffeeShopVariables>({
+  const { register, handleSubmit, formState, setError, clearErrors } = useForm<CreateCoffeeShopVariables>({
     mode: 'onChange'
   });
   const onSubmitValid = (data: FieldValues) => {

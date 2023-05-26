@@ -24,24 +24,24 @@ const SEE_COFFEE_SHOP = gql`
   }
 `
 
-const EDIT_COFFEE_SHOP = gql`
-  mutation EditCoffeeShop(
-    $id: Int!
-    $name: String!
-    $latitude: String!
-    $longitude: String!
-  ) {
-    editCoffeeShop(
-      id: $id
-      name: $name
-      latitude: $latitude
-      longitude: $longitude
-    ) {
-      ok
-      error
-    }
-  }
-`;
+// const EDIT_COFFEE_SHOP = gql`
+//   mutation EditCoffeeShop(
+//     $id: Int!
+//     $name: String!
+//     $latitude: String!
+//     $longitude: String!
+//   ) {
+//     editCoffeeShop(
+//       id: $id
+//       name: $name
+//       latitude: $latitude
+//       longitude: $longitude
+//     ) {
+//       ok
+//       error
+//     }
+//   }
+// `;
 
 const Button = styled.span`
   background-color: ${(props) => props.theme.accent};

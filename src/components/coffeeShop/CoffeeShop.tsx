@@ -46,7 +46,7 @@ function CoffeeShop({ id, user, name, photos, categories }: SeeCoffeeShops_seeCo
           {categories.map((c) => <div key={c.name}>{c.name}</div>)}
         </CoffeeShopCategories>
         <div>
-          {photos.map((p) => <img src={p.url} key={p.url} />)}
+          {photos.map((p) => <img src={p.url} key={p.url} alt='' />)}
         </div>
       </CoffeeShopData>
     </CoffeeShopContainer>
